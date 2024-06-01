@@ -1,49 +1,32 @@
 <div class="swiper-slide">
   <article class="card">
     <div class="card__picture">
-      <img src="./../img/arrivals/@@img.jpg"
-        srcset="./../img/arrivals/@@img.jpg 1000w, ./../img/arrivals/@@img@2x.jpg 2000w" alt="Images Headphones">
-      <div class="card__new">
-        @@status
-      </div>
+      <img src="./img/arrivals/@@img.jpg" srcset="./img/arrivals/@@img@2x.jpg 2x" alt="Headphones">
+      <div class="card__new">@@status</div>
       <div class="card__fav">
         <button class="btn-fav">
-          <!-- <img src="./../img/icons/fav.svg" alt="Favorits"> -->
-          <svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
-            <desc>
-              Created with Pixso.
-            </desc>
-            <defs>
-              <clipPath id="clip10_3234">
-                <rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
-              </clipPath>
-            </defs>
-            <g clip-path="url(#clip10_3234)">
-              <path
-                d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
-                fill-opacity="1.000000" fill-rule="evenodd" />
-            </g>
+          <!-- <img src="./img/icons/fav.svg" alt="Fav"> -->
+          <svg class="btn-fav__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.577 5.76422C10.2546 6.07365 9.74548 6.07365 9.42304 5.76422L8.84604 5.2105C8.17068 4.56239 7.25832 4.16667 6.25004 4.16667C4.17897 4.16667 2.50004 5.8456 2.50004 7.91667C2.50004 9.90219 3.57486 11.5417 5.1265 12.8888C6.67947 14.237 8.53621 15.1312 9.64558 15.5876C9.87754 15.683 10.1225 15.683 10.3545 15.5876C11.4639 15.1312 13.3206 14.237 14.8736 12.8888C16.4252 11.5417 17.5 9.90218 17.5 7.91667C17.5 5.8456 15.8211 4.16667 13.75 4.16667C12.7418 4.16667 11.8294 4.56239 11.154 5.2105L10.577 5.76422ZM10 4.00798C9.0268 3.074 7.70545 2.5 6.25004 2.5C3.2585 2.5 0.833374 4.92512 0.833374 7.91667C0.833374 13.2235 6.64199 16.1542 9.01153 17.1289C9.64968 17.3914 10.3504 17.3914 10.9885 17.1289C13.3581 16.1542 19.1667 13.2235 19.1667 7.91667C19.1667 4.92512 16.7416 2.5 13.75 2.5C12.2946 2.5 10.9733 3.074 10 4.00798Z" />
           </svg>
         </button>
       </div>
       <div class="card__btn">
-        <button class="btn btn--small btn--wide">Add to card</button>
+        <button class="btn btn--small btn--wide">Add to cart</button>
       </div>
     </div>
     <div class="card__desc">
       <div class="card__rating">
-        @@for ( let i = 0; i < context.rating; i++ ){ <img src="./../img/icons/star.svg"" alt=" Star">
+
+        @@for (let i = 0; i < context.rating; i++) { <img src="./img/icons/star.svg" alt="Star">
           }
-      </div>
-      <div class="card__title">
-        @@title
-      </div>
-      <div class="card__price">
-        @@price
-      </div>
 
-
+      </div>
+      <div class="card__title">@@title</div>
+      <div class="card__price">@@price</div>
     </div>
-    <a class="card__link" href="#!"></a>
+    <a href="#!" class="card__link"></a>
   </article>
 </div>
