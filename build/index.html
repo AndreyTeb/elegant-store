@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Elegant store</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<div class="tagline">
+			<img class="tagline__icon" src="./img/icons/ticket-percent.svg" alt="Icon" />
+
+			<div class="tagline__descr">
+				30% off storewide&#160;&#8212; Limited time!
+			</div>
+			<span class="tagline__link">
+				Shop Now
+				<img src="./img/icons/arrow-right.svg" alt="Arrow" />
+			</span>
+
+			<button class="tagline__close">
+				<!-- <img src="./img/icons/close.svg" alt="Close"> -->
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M15.4419 5.44194C15.686 5.19786 15.686 4.80214 15.4419 4.55806C15.1979 4.31398 14.8021 4.31398 14.5581 4.55806L10 9.11612L5.44194 4.55806C5.19786 4.31398 4.80214 4.31398 4.55806 4.55806C4.31398 4.80214 4.31398 5.19786 4.55806 5.44194L9.11612 10L4.55806 14.5581C4.31398 14.8021 4.31398 15.1979 4.55806 15.4419C4.80214 15.686 5.19786 15.686 5.44194 15.4419L10 10.8839L14.5581 15.4419C14.8021 15.686 15.1979 15.686 15.4419 15.4419C15.686 15.1979 15.686 14.8021 15.4419 14.5581L10.8839 10L15.4419 5.44194Z"
+					/>
+				</svg>
+			</button>
+
+			<a href="#!" class="tagline__link-overlay"></a>
+		</div>
+		<nav class="nav">
+			<div class="container">
+				<div class="nav__row">
+					<div class="nav__logo">
+						<button class="nav__btn-mobile-nav" id="mobile-nav-btn">
+							<img src="./img/icons/menu.svg" alt="Navigation" />
+						</button>
+						<a class="nav__logo logo" href="#!"> 3legant<span>.</span> </a>
+					</div>
+
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#!">
+								Home
+							</a>
+						</li>
+						<li class="nav__item">
+							<button class="nav__link" href="#!">Shop <img src="./img/icons/icon-chevron-down.svg" alt="Arrow Down" /></button>
+						</li>
+						<li class="nav__item">
+							<button class="nav__link" href="#!">Product <img src="./img/icons/icon-chevron-down.svg" alt="Arrow Down" /></button>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#!">
+								Contact Us
+							</a>
+						</li>
+					</ul>
+
+					<div class="nav__btns">
+						<button class="nav__btn nav__btn--search">
+							<img src="./img/icons/search.svg" alt="Search" />
+						</button>
+						<button class="nav__btn nav__btn--user">
+							<img src="./img/icons/user.svg" alt="User" />
+						</button>
+						<button class="nav__btn nav__btn--cart">
+							<img src="./img/icons/cart.svg" alt="Cart" />
+							<span class="nav__btn-count">2</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="mobile-nav">
+			<!-- mobile-nav__top -->
+			<div class="mobile-nav__top">
+				<div class="mobile-nav__header">
+					<a class="nav__logo logo logo--small" href="#!"> 3legant<span>.</span> </a>
+					<button id="close-mobile-nav">
+						<img src="./img/icons/close-nav.svg" alt="Close" />
+					</button>
+				</div>
+
+				<form class="mobile-nav__search">
+					<label class="mobile-nav__search-label" for="">
+						<img src="./img/icons/search.svg" alt="Search" />
+						<input class="mobile-nav__search-input" type="text" placeholder="Search" />
+					</label>
+				</form>
+
+				<ul class="mobile-nav__list">
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link" href="#!">
+							Home
+						</a>
+					</li>
+					<li class="mobile-nav__item">
+						<button class="mobile-nav__link" href="#!">Shop <img src="./img/icons/icon-chevron-down.svg" alt="Arrow Down" /></button>
+					</li>
+					<li class="mobile-nav__item">
+						<button class="mobile-nav__link" href="#!">Product <img src="./img/icons/icon-chevron-down.svg" alt="Arrow Down" /></button>
+					</li>
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link" href="#!">
+							Contact Us
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- // mobile-nav__top -->
+
+			<!-- mobile-nav__bottom -->
+			<div class="mobile-nav__bottom">
+				<ul class="mobile-nav__list">
+					<li class="mobile-nav__item mobile-nav__item--gray">
+						<a class="mobile-nav__link mobile-nav__link--gray" href="#!">
+							Cart
+							<span class="nav__btn nav__btn--cart">
+								<img src="./img/icons/cart.svg" alt="Cart" />
+								<span class="nav__btn-count nav__btn-count--white">2</span>
+							</span>
+						</a>
+					</li>
+					<li class="mobile-nav__item mobile-nav__item--gray">
+						<a class="mobile-nav__link mobile-nav__link--gray" href="#!">
+							Wishlist
+							<span class="nav__btn nav__btn--cart">
+								<img src="./img/icons/heart.svg" alt="Cart" />
+								<span class="nav__btn-count nav__btn-count--white">2</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+
+				<a class="btn btn--wide" href="#!">Sign In</a>
+
+				<div class="mobile-nav__socials">
+					<a href="#!"><img src="./img/socials-black/instagram.svg" alt="Social"/></a>
+					<a href="#!"><img src="./img/socials-black/facebook.svg" alt="Social"/></a>
+					<a href="#!"><img src="./img/socials-black/youtube.svg" alt="Social"/></a>
+				</div>
+			</div>
+			<!-- // mobile-nav__bottom -->
+		</div>
+		<div class="mobile-nav-fade"></div>
+
+		<section class="hero">
+			<div class="hero__container">
+				<div class="hero__content">
+					<div class="hero__content">
+						<h1 class="hero__title">
+							Listen to&#160;the&#160;<span>amazing</span> <br />
+							music sound.
+						</h1>
+
+						<div class="hero__descr">
+							<p>
+								Experience music like never before
+							</p>
+						</div>
+
+						<div class="hero__link">
+							<a class="btn" href="#!">
+								Shopping Now
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="arrivals">
+			<div class="container">
+				<div class="arrivals__row">
+					<div class="arrivals__title">
+						<h2 class="headline-4">
+							New Arrivals
+						</h2>
+					</div>
+					<div class="arrivals__dots">
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-right">
+				<div class="arrivals__slider">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/01.jpg" srcset="./img/arrivals/01.jpg 1000w, ./../img/arrivals/01@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
+										</div>
+										<div class="card__price">
+											$299.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/02.jpg" srcset="./img/arrivals/02.jpg 1000w, ./../img/arrivals/02@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+											<img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Beats Studio Pro
+										</div>
+										<div class="card__price">
+											$349.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/03.jpg" srcset="./img/arrivals/03.jpg 1000w, ./../img/arrivals/03@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
+										</div>
+										<div class="card__price">
+											$149.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/04.jpg" srcset="./img/arrivals/04.jpg 1000w, ./../img/arrivals/04@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Skullcandy&#160;&#8212; Rail True Wireless Earbuds
+										</div>
+										<div class="card__price">
+											$79.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/05.jpg" srcset="./img/arrivals/05.jpg 1000w, ./../img/arrivals/05@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Beats Studio Pro
+										</div>
+										<div class="card__price">
+											$224.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/01.jpg" srcset="./img/arrivals/01.jpg 1000w, ./../img/arrivals/01@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
+										</div>
+										<div class="card__price">
+											$299.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/02.jpg" srcset="./img/arrivals/02.jpg 1000w, ./../img/arrivals/02@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+											<img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Beats Studio Pro
+										</div>
+										<div class="card__price">
+											$349.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/03.jpg" srcset="./img/arrivals/03.jpg 1000w, ./../img/arrivals/03@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
+										</div>
+										<div class="card__price">
+											$149.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/04.jpg" srcset="./img/arrivals/04.jpg 1000w, ./../img/arrivals/04@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Skullcandy&#160;&#8212; Rail True Wireless Earbuds
+										</div>
+										<div class="card__price">
+											$79.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="card">
+									<div class="card__picture">
+										<img src="./img/arrivals/05.jpg" srcset="./img/arrivals/05.jpg 1000w, ./../img/arrivals/05@2x.jpg 2000w" alt="Images Headphones" />
+										<div class="card__new">
+											new
+										</div>
+										<div class="card__fav">
+											<button class="btn-fav">
+												<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+												<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+													<desc>
+														Created with Pixso.
+													</desc>
+													<defs>
+														<clipPath id="clip10_3234">
+															<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+														</clipPath>
+													</defs>
+													<g clip-path="url(#clip10_3234)">
+														<path
+															d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+															fill-opacity="1.000000"
+															fill-rule="evenodd"
+														/>
+													</g>
+												</svg>
+											</button>
+										</div>
+										<div class="card__btn">
+											<button class="btn btn--small btn--wide">Add to&#160;card</button>
+										</div>
+									</div>
+									<div class="card__desc">
+										<div class="card__rating">
+											<img src="./img/icons/star.svg"" alt=" Star">
+										</div>
+										<div class="card__title">
+											Beats Studio Pro
+										</div>
+										<div class="card__price">
+											$224.99
+										</div>
+									</div>
+									<a class="card__link" href="#!"></a>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="collection">
+			<div class="container">
+				<div class="collection__title">
+					<h2 class="headline-4">
+						Shop Collection
+					</h2>
+				</div>
+				<div class="collection__grid">
+					<div class="plate plate--tall plate--01">
+						<div class="plate__content">
+							<h3 class="plate__title">Headband</h3>
+							<a class="plate__link" href="#!">
+								Collection
+								<img src="./img/icons/arrow-right-black.svg" alt="Arrow" />
+							</a>
+						</div>
+					</div>
+					<div class="plate plate--02">
+						<div class="plate__content">
+							<h3 class="plate__title">Earbuds</h3>
+							<a class="plate__link" href="#!">
+								Collection
+								<img src="./img/icons/arrow-right-black.svg" alt="Arrow" />
+							</a>
+						</div>
+					</div>
+					<div class="plate plate--03">
+						<div class="plate__content">
+							<h3 class="plate__title">Accessories</h3>
+							<a class="plate__link" href="#!">
+								Collection
+								<img src="./img/icons/arrow-right-black.svg" alt="Arrow" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="bestseller">
+			<div class="container">
+				<div class="bestseller__title">
+					<h2 class="headline-4">Best Seller</h2>
+				</div>
+				<div class="bestseller__cards">
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/06.jpg" srcset="./img/arrivals/06.jpg 1000w, ./../img/arrivals/06@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img
+								src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
+							</h3>
+							<div class="card__price">
+								$299.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/07.jpg" srcset="./img/arrivals/07.jpg 1000w, ./../img/arrivals/07@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img
+								src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Beats Studio Pro
+							</h3>
+							<div class="card__price">
+								$349.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/08.jpg" srcset="./img/arrivals/08.jpg 1000w, ./../img/arrivals/08@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
+							</h3>
+							<div class="card__price">
+								$149.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/09.jpg" srcset="./img/arrivals/09.jpg 1000w, ./../img/arrivals/09@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Skullcandy&#160;&#8212; Rail True Wireless Earbuds
+							</h3>
+							<div class="card__price">
+								$79.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/10.jpg" srcset="./img/arrivals/10.jpg 1000w, ./../img/arrivals/10@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img
+								src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Beats Studio Pro
+							</h3>
+							<div class="card__price">
+								$224.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/11.jpg" srcset="./img/arrivals/11.jpg 1000w, ./../img/arrivals/11@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img
+								src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Skullcandy&#160;&#8212; Crusher anc 2 wireless headphones
+							</h3>
+							<div class="card__price">
+								$299.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/12.jpg" srcset="./img/arrivals/12.jpg 1000w, ./../img/arrivals/12@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Beats Studio Pro
+							</h3>
+							<div class="card__price">
+								$349.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+					<article class="card">
+						<div class="card__picture">
+							<img src="./img/arrivals/13.jpg" srcset="./img/arrivals/13.jpg 1000w, ./../img/arrivals/13@2x.jpg 2000w" alt="Images Headphones" />
+							<div class="card__new">
+								HOT
+							</div>
+							<div class="card__fav">
+								<button class="btn-fav">
+									<!-- <img src="./img/icons/fav.svg" alt="Favorits"> -->
+									<svg class="btn-fav__svg" width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none">
+										<desc>
+											Created with Pixso.
+										</desc>
+										<defs>
+											<clipPath id="clip10_3234">
+												<rect width="20.000000" height="20.000000" fill="white" fill-opacity="0" />
+											</clipPath>
+										</defs>
+										<g clip-path="url(#clip10_3234)">
+											<path
+												d="M10.57 5.76C10.25 6.07 9.74 6.07 9.42 5.76L8.84 5.21C8.17 4.56 7.25 4.16 6.25 4.16C4.17 4.16 2.49 5.84 2.49 7.91C2.49 9.9 3.57 11.54 5.12 12.88C6.67 14.23 8.53 15.13 9.64 15.58C9.87 15.68 10.12 15.68 10.35 15.58C11.46 15.13 13.32 14.23 14.87 12.88C16.42 11.54 17.5 9.9 17.5 7.91C17.5 5.84 15.82 4.16 13.75 4.16C12.74 4.16 11.82 4.56 11.15 5.21L10.57 5.76ZM10 4C9.02 3.07 7.7 2.5 6.25 2.5C3.25 2.5 0.83 4.92 0.83 7.91C0.83 13.22 6.64 16.15 9.01 17.12C9.64 17.39 10.35 17.39 10.98 17.12C13.35 16.15 19.16 13.22 19.16 7.91C19.16 4.92 16.74 2.5 13.75 2.5C12.29 2.5 10.97 3.07 10 4Z"
+												fill-opacity="1.000000"
+												fill-rule="evenodd"
+											/>
+										</g>
+									</svg>
+								</button>
+							</div>
+							<div class="card__btn">
+								<button class="btn btn--small btn--wide">Add to&#160;card</button>
+							</div>
+						</div>
+						<div class="card__desc">
+							<div class="card__rating">
+								<img src="./img/icons/star.svg"" alt=" Star"> <img src="./img/icons/star.svg"" alt=" Star">
+							</div>
+							<h3 class="card__title card__title--ellipsis">
+								Sony&#160;&#8212; WH-CH720N Wireless Noise Canceling
+							</h3>
+							<div class="card__price">
+								$149.99
+							</div>
+						</div>
+						<a class="card__link" href="#!"></a>
+					</article>
+				</div>
+			</div>
+		</div>
+		<section class="promotion">
+			<div class="promotion__container">
+				<div class="promotion__content">
+					<div class="promotion__desc">
+						<p class="promotion__tagline">PROMOTION</p>
+						<h2 class="promotion__title">Hurry up! 40%&#160;OFF</h2>
+						<div class="promotion__text">Thousands of&#160;high tech are waiting for you</div>
+					</div>
+
+					<div class="promotion__timer">
+						<p class="promotion__expires">Offer expires in:</p>
+						<div class="timer">
+							<div class="timer__el">
+								<div class="timer__value" id="days"></div>
+								<div class="timer__desc">Days</div>
+							</div>
+							<div class="timer__el">
+								<div class="timer__value" id="hours"></div>
+								<div class="timer__desc">Hours</div>
+							</div>
+							<div class="timer__el">
+								<div class="timer__value" id="minutes"></div>
+								<div class="timer__desc">Minutes</div>
+							</div>
+							<div class="timer__el">
+								<div class="timer__value" id="seconds"></div>
+								<div class="timer__desc">Seconds</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="promotion__btn">
+						<a class="btn btn--small" href="#!">Shop now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="values">
+			<div class="container">
+				<div class="values__grid">
+					<div class="value">
+						<img class="value__img" src="./img/values/shipping.svg" alt="Image" />
+						<h4 class="value__title">Free Shipping</h4>
+						<p class="value__desc">Order above $200</p>
+					</div>
+					<div class="value">
+						<img class="value__img" src="./img/values/finance.svg" alt="Image" />
+						<h4 class="value__title">Money-back</h4>
+						<p class="value__desc">30 days guarantee</p>
+					</div>
+					<div class="value">
+						<img class="value__img" src="./img/values/lock.svg" alt="Image" />
+						<h4 class="value__title">Secure Payments</h4>
+						<p class="value__desc">Secured by&#160;Stripe</p>
+					</div>
+					<div class="value">
+						<img class="value__img" src="./img/values/call.svg" alt="Image" />
+						<h4 class="value__title">24/7 Support</h4>
+						<p class="value__desc">Phone and Email support</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="newsletter">
+			<div class="newsletter__content">
+				<h2 class="newsletter__title headline-4">Join Our Newsletter</h2>
+				<p class="newsletter__desc">Sign up&#160;for deals, new products and promotions</p>
+
+				<form class="form-newsletter" action="">
+					<img src="./img/icons/email.svg" alt="email" />
+					<input class="form-newsletter__input" type="text" placeholder="Email address" />
+					<button class="form-newsletter__submit" type="submit">Signup</button>
+				</form>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row footer__row-top">
+					<div class="footer__title">
+						<div class="footer__logo">3legant <span>.</span></div>
+						<div class="footer__separator"></div>
+						<div class="footer__store">Headphone Store</div>
+					</div>
+					<ul class="footer__nav">
+						<li><a href="#!">Home</a></li>
+						<li><a href="#!">Shop</a></li>
+						<li><a href="#!">Product</a></li>
+						<li><a href="#!">Blog</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__row footer__row--border">
+					<div class="footer__copyrights">
+						<p>Copyright &#169; 2023 3legant. All rights reserved</p>
+						<p class="footer__copyrights-links">
+							<a href="#!">Privacy Policy</a>
+							<a href="#!">Terms of&#160;Use</a>
+						</p>
+					</div>
+
+					<div class="footer__socials">
+						<a href="#!"><img src="./img/socials/instagram.svg" alt="Social"/></a>
+						<a href="#!"><img src="./img/socials/facebook.svg" alt="Social"/></a>
+						<a href="#!"><img src="./img/socials/youtube.svg" alt="Social"/></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
